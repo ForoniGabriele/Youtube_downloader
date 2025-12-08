@@ -1,10 +1,7 @@
 import yt_dlp
-from args import argument_parser
 import os 
 
-args = argument_parser()
-
-def download(url = args.link, dir = args.dir):
+def download(url, dir):
     if not os.path.exists(dir):
         os.makedirs(dir)
 
@@ -24,6 +21,3 @@ def download(url = args.link, dir = args.dir):
     except Exception as e:
         print(f"\n Errore durante il download: {e}")
     
-
-
-download()
