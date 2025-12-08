@@ -19,14 +19,6 @@ def argument_parser():
         help = 'Cartella di destinazione dei download',
     )
 
-    parser.add_argument(
-        '-f',
-        '--format',
-        type = str,
-        required = True,
-        help = 'video or audio'
-    )
-
     args = parser.parse_args()
     
     return args
