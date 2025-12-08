@@ -4,6 +4,7 @@ def argument_parser():
     parser = argparse.ArgumentParser()
 
     parser.add_argument(
+        '-l',
         '--link',
         type = str,
         required = True,
@@ -11,10 +12,11 @@ def argument_parser():
     )
 
     parser.add_argument(
+        '-d',
         '--dir',
         type = str,
         default = './Yt_downloader',
-        help = 'Cartella di destinazione dei download'
+        help = 'Cartella di destinazione dei download',
     )
 
     args = parser.parse_args()
